@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: #c8e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .left-side{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 70%;
+    background: rgb(151, 150, 150);
+
+    right: -15px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.content .left-side .details{
+    margin: 14px;
+    text-align: center;
+}
+.content .left-side .details i{
+    font-size: 30px;
+    color: #e5861b;
+    margin-bottom:  10px;
+}
+.content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.content .left-side .details .text-1,
+.content .left-side .details .text-2{
+    font-size: 16spx;
+    color: #9e5103;
+}
+
+.container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+.content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 500;
+    color: #e5861b;
+    margin-top: 8px;
+}
+.content .right-side  .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.content .right-side .input-box input,
+.content .right-side .input-box textarea
+ {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background: #dfe2f8;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 15px;
+    resize: none;
+}
+.right-side .message-box{
+    min-height: 100px;
+    resize: none;
+}
+.right-side .button{
+    display: inline-block;
+    margin-top: 8px;
+}
+.right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 15px;
+    background: #e5861b;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+@media(max-width: 950px){
+    .container{
+        width: 90%;
+        padding: 30px 35px 40px 35px;
+    }
+}
+@media(max-width: 820px){
+    .container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .container .content{
+        flex-direction: column-reverse;
+    }
+    .container .content .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 35px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container .content .left-side::before{
+        display: none;
+    }
+    .container .content .right-side{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
